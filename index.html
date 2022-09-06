@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./styles/index.css" />
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      async
+    ></script>
+  </head>
+  <body>
+    <div class="app">
+      <!-- HEADER SECTION -->
+      <header class="app__header">
+        <div
+          class="container d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+        >
+          <a
+            href="/"
+            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
+          >
+            <svg class="bi me-2" width="40" height="32">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+            <span class="fs-4">Simple header</span>
+          </a>
+
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a href="#" class="nav-link active" aria-current="page"
+                >Featured Projects</a
+              >
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">About Me</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </header>
+      <!-- HERO SECTION -->
+      <section class="app__hero">
+        <div class="container col-xxl-8 px-4 py-5">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6 shadow-lg p-1">
+              <img
+                src="https://source.unsplash.com/random"
+                class="d-block mx-lg-auto img-fluid hero__image--main"
+                alt="Bootstrap Themes"
+                width="700"
+                height="500"
+                loading="lazy"
+              />
+            </div>
+            <div class="col-lg-6">
+              <h1 class="display-5 fw-bold lh-1 mb-3">
+                Responsive left-aligned hero with image
+              </h1>
+              <p class="lead">
+                Quickly design and customize responsive mobile-first sites with
+                Bootstrap, the world’s most popular front-end open source
+                toolkit, featuring Sass variables and mixins, responsive grid
+                system, extensive prebuilt components, and powerful JavaScript
+                plugins.
+              </p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-lg px-4 me-md-2"
+                >
+                  Primary
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary btn-lg px-4"
+                >
+                  Default
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INTRODUCTION SECTION -->
+      <section class="app__intro">
+        <div class="p-4 p-md-5 pe-md-0 mb-4 text-bg-dark d-flex gap-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 px-0 mx-auto text-center">
+                <h1 class="display-4 fst-italic text-primary fw-bold">
+                  Title of a longer featured blog post
+                </h1>
+                <p class="lead my-3">
+                  Multiple lines of text that form the lede, informing new
+                  readers quickly and efficiently about what’s most interesting
+                  in this post’s contents.
+                </p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                  <button
+                    type="button"
+                    class="btn btn-outline-primary btn-lg px-4"
+                  >
+                    Secondary
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="my-5 py-5"></div>
+
+      <!-- PROJECTS SECTION -->
+      <section class="app__projects">
+        <div class="container">
+          <div class="pt-2 pb-5 text-center">
+            <h1>Featured Projects</h1>
+          </div>
+
+          <div
+            class="row projects__cards"
+            data-masonry='{"percentPosition": true }'
+            style="position: relative; height: 1190px"
+          >
+            <div
+              class="projects__project col-sm-6 col-lg-4 mb-4"
+              style="position: absolute; left: 0%; top: 0px"
+            >
+              <div class="card border-0 overflow-hidden">
+                <div
+                  class="bg-secondary w-100 position-relative border border-3 border-primary rounded"
+                >
+                  <div class="card__image__container__screen bg-primary">
+                    <div
+                      class="position-absolute top-0 start-0 card__image__container opacity-25"
+                    >
+                      <img
+                        src="https://source.unsplash.com/random"
+                        alt="Project 1 Image"
+                        class="card__image"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    <b class="text-primary d">Project</b> Predicate
+                  </h5>
+                  <!-- <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p> -->
+                </div>
+              </div>
+            </div>
+            <div
+              class="projects__project col-sm-6 col-lg-4 mb-4"
+              style="position: absolute; left: 0%; top: 0px"
+            >
+              <div class="card border-0 overflow-hidden">
+                <div
+                  class="bg-secondary w-100 position-relative border border-3 border-primary rounded"
+                >
+                  <div class="card__image__container__screen bg-primary">
+                    <div
+                      class="position-absolute top-0 start-0 card__image__container opacity-25"
+                    >
+                      <img
+                        src="https://source.unsplash.com/random"
+                        alt="Project 1 Image"
+                        class="card__image"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    <b class="text-primary d">Project</b> Predicate
+                  </h5>
+                  <!-- <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p> -->
+                </div>
+              </div>
+            </div>
+            <div
+              class="projects__project col-sm-6 col-lg-4 mb-4"
+              style="position: absolute; left: 0%; top: 0px"
+            >
+              <div class="card border-0 overflow-hidden">
+                <div
+                  class="bg-secondary w-100 position-relative border border-3 border-primary rounded"
+                >
+                  <div class="card__image__container__screen bg-primary">
+                    <div
+                      class="position-absolute top-0 start-0 card__image__container opacity-25"
+                    >
+                      <img
+                        src="https://source.unsplash.com/random"
+                        alt="Project 1 Image"
+                        class="card__image"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    <b class="text-primary d">Project</b> Predicate
+                  </h5>
+                  <!-- <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p> -->
+                </div>
+              </div>
+            </div>
+            <div
+              class="projects__project col-sm-6 col-lg-4 mb-4"
+              style="position: absolute; left: 0%; top: 0px"
+            >
+              <div class="card border-0 overflow-hidden">
+                <div
+                  class="bg-secondary w-100 position-relative border border-3 border-primary rounded"
+                >
+                  <div class="card__image__container__screen bg-primary">
+                    <div
+                      class="position-absolute top-0 start-0 card__image__container opacity-25"
+                    >
+                      <img
+                        src="https://source.unsplash.com/random"
+                        alt="Project 1 Image"
+                        class="card__image"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    <b class="text-primary d">Project</b> Predicate
+                  </h5>
+                  <!-- <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p> -->
+                </div>
+              </div>
+            </div>
+            <div
+              class="projects__project col-sm-6 col-lg-4 mb-4"
+              style="position: absolute; left: 0%; top: 0px"
+            >
+              <div class="card border-0 overflow-hidden">
+                <div
+                  class="bg-secondary w-100 position-relative border border-3 border-primary rounded"
+                >
+                  <div class="card__image__container__screen bg-primary">
+                    <div
+                      class="position-absolute top-0 start-0 card__image__container opacity-25"
+                    >
+                      <img
+                        src="https://source.unsplash.com/random"
+                        alt="Project 1 Image"
+                        class="card__image"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    <b class="text-primary d">Project</b> Predicate
+                  </h5>
+                  <!-- <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p> -->
+                </div>
+              </div>
+            </div>
+            <div
+              class="projects__project col-sm-6 col-lg-4 mb-4"
+              style="position: absolute; left: 0%; top: 0px"
+            >
+              <div class="card border-0 overflow-hidden">
+                <div
+                  class="bg-secondary w-100 position-relative border border-3 border-primary rounded"
+                >
+                  <div class="card__image__container__screen bg-primary">
+                    <div
+                      class="position-absolute top-0 start-0 card__image__container opacity-25"
+                    >
+                      <img
+                        src="https://source.unsplash.com/random"
+                        alt="Project 1 Image"
+                        class="card__image"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title text-center">
+                    <b class="text-primary d">Project</b> Predicate
+                  </h5>
+                  <!-- <p class="card-text">
+            This is a longer card with supporting text below as a natural
+            lead-in to additional content. This content is a little bit
+            longer.
+          </p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="my-5 py-5"></div>
+
+      <!-- FAQ SECTION -->
+      <section class="app__faqs">
+        <div class="container">
+          <div class="pt-2 pb-5">
+            <h1>Frequently Asked Questions</h1>
+          </div>
+          
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne"
+                  aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseOne"
+                >
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="panelsStayOpen-headingOne"
+              >
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It
+                  is shown by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo"
+                >
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingTwo"
+              >
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree"
+                >
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div
+                id="panelsStayOpen-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree"
+              >
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It
+                  is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These
+                  classes control the overall appearance, as well as the showing
+                  and hiding via CSS transitions. You can modify any of this
+                  with custom CSS or overriding our default variables. It's also
+                  worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit
+                  overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="my-5 py-5"></div>
+
+      <!-- CONTACT SECTION -->
+      <section class="app__contact">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <h2>Contact Information</h2>
+              <p>
+                Read more detailed instructions and documentation on using or
+                contributing to Bootstrap.
+              </p>
+              <ul class="icon-list ps-0">
+                <li class="d-flex align-items-start mb-1">
+                  <a href="/docs/5.2/getting-started/introduction/"
+                    >Bootstrap quick start guide</a
+                  >
+                </li>
+                <li class="d-flex align-items-start mb-1">
+                  <a href="/docs/5.2/getting-started/webpack/"
+                    >Bootstrap Webpack guide</a
+                  >
+                </li>
+                <li class="d-flex align-items-start mb-1">
+                  <a href="/docs/5.2/getting-started/parcel/"
+                    >Bootstrap Parcel guide</a
+                  >
+                </li>
+                <li class="d-flex align-items-start mb-1">
+                  <a href="/docs/5.2/getting-started/vite/"
+                    >Bootstrap Vite guide</a
+                  >
+                </li>
+                <li class="d-flex align-items-start mb-1">
+                  <a href="/docs/5.2/getting-started/contribute/"
+                    >Contributing to Bootstrap</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-5 offset-lg-1">
+              <div class="card text-bg-primary p-3">
+                <p class="m-0">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit,
+                  similique!
+                </p>
+              </div>
+
+              <div class="card text-bg-primary p-3 mt-4">
+                <p class="m-0">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit,
+                  similique!
+                </p>
+              </div>
+
+              <div class="card text-bg-primary p-3 mt-4">
+                <p class="m-0">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit,
+                  similique!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="my-5 py-5"></div>
+
+      <!-- FOOTER SECTION -->
+    </div>
+  </body>
+</html>
