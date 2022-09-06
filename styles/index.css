@@ -1,0 +1,39 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.app__hero .hero__image--main {
+  height: 500px;
+  width: 700px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.app__intro .intro__image--main {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.app__intro .hero__image__container {
+  height: 300px;
+  width: 100%;
+}
+
+.app__projects .projects__project .card__image__container__screen {
+  height: 200px;
+}
+
+.app__projects .projects__project .card__image__container {
+  height: 100%;
+  width: 100%;
+}
+
+.app__projects .projects__project .card__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=index.css.map */
