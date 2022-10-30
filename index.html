@@ -76,7 +76,7 @@
       <section class="app__hero">
         <div class="container col-xxl-8 px-4 py-5">
           <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-            <div class="col-10 col-sm-8 col-lg-6 shadow-lg p-1">
+            <div class="col-10 col-sm-8 col-lg-5 shadow-lg p-1">
               <img
                 src="https://source.unsplash.com/random"
                 class="d-block mx-lg-auto img-fluid hero__image--main"
@@ -86,16 +86,15 @@
                 loading="lazy"
               />
             </div>
-            <div class="col-lg-6">
-              <h1 class="display-5 fw-bold lh-1 mb-3">
-                Responsive left-aligned hero with image
+            <div class="col-lg-7 pe-5">
+              <h1 class="display-3 fw-bold lh-1 mb-3">
+                <div class="row">
+                  <div class="col-12">Hello there!</div>           
+                  <div class="col-12 text-primary">I'm Anthony</div>
+                </div>
               </h1>
               <p class="lead">
-                Quickly design and customize responsive mobile-first sites with
-                Bootstrap, the world’s most popular front-end open source
-                toolkit, featuring Sass variables and mixins, responsive grid
-                system, extensive prebuilt components, and powerful JavaScript
-                plugins.
+                I'm a software developer. I can build a software solution for your business or day-to-day concerns.
               </p>
               <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                 <button
@@ -117,29 +116,194 @@
       </section>
 
       <!-- INTRODUCTION SECTION -->
-      <section class="app__intro">
-        <div class="p-4 p-md-5 pe-md-0 mb-4 text-bg-dark d-flex gap-3">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6 px-0 mx-auto text-center">
-                <h1 class="display-4 fst-italic text-primary fw-bold">
-                  Title of a longer featured blog post
-                </h1>
-                <p class="lead my-3">
-                  Multiple lines of text that form the lede, informing new
-                  readers quickly and efficiently about what’s most interesting
-                  in this post’s contents.
-                </p>
-                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                  <button
-                    type="button"
-                    class="btn btn-outline-primary btn-lg px-4"
+      <section class="bg-dark app__intro">
+        <div class="container-xxl text-secondary px-4 py-5 text-center">
+          <div class="py-5">
+            <h1 class="display-5 fw-bold text-white">
+              <div class="row">
+                <div class="col-12">I'm your</div>
+                <div class="col-12 text-primary">go-to developer</div>
+              </div>
+            </h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="fs-5 mb-4">Easy to reach and negotiate. We can meet online, talk via phone, or chat</p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Custom button</button>
+                <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="my-5 py-5"></div>
+
+      <!-- FAQ SECTION -->
+      <section class="app__faqs">
+        <div class="container">
+          <div class="pt-2 pb-5">
+            <h1 class="display-1 fw-bold text-center">Common Questions Most Clients Asked</h1>
+          </div>
+          
+          <div class="row">
+            <div class="col-6 offset-3">
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseOne"
+                      aria-expanded="true"
+                      aria-controls="panelsStayOpen-collapseOne"
+                    >
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne"
                   >
-                    Secondary
-                  </button>
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It
+                      is shown by default, until the collapse plugin adds the
+                      appropriate classes that we use to style each element. These
+                      classes control the overall appearance, as well as the showing
+                      and hiding via CSS transitions. You can modify any of this
+                      with custom CSS or overriding our default variables. It's also
+                      worth noting that just about any HTML can go within the
+                      <code>.accordion-body</code>, though the transition does limit
+                      overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseTwo"
+                    >
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo"
+                  >
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It
+                      is hidden by default, until the collapse plugin adds the
+                      appropriate classes that we use to style each element. These
+                      classes control the overall appearance, as well as the showing
+                      and hiding via CSS transitions. You can modify any of this
+                      with custom CSS or overriding our default variables. It's also
+                      worth noting that just about any HTML can go within the
+                      <code>.accordion-body</code>, though the transition does limit
+                      overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseThree"
+                    >
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree"
+                  >
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It
+                      is hidden by default, until the collapse plugin adds the
+                      appropriate classes that we use to style each element. These
+                      classes control the overall appearance, as well as the showing
+                      and hiding via CSS transitions. You can modify any of this
+                      with custom CSS or overriding our default variables. It's also
+                      worth noting that just about any HTML can go within the
+                      <code>.accordion-body</code>, though the transition does limit
+                      overflow.
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+           <div class="col-12">
+            <div class="d-flex justify-content-center" style="height: 200px;">
+              <div class="vr"></div>
+            </div>
+           </div>
+            <div class="col-12">
+              <div class="p-5">
+                <div class="text-center">
+                  <h2 class="display-4">
+                    <div class="row">
+                      <div class="col-12">I've been in the scene</div>
+                      <div class="col-12">for a while</div>
+                    </div>
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="d-flex justify-content-around">
+                <div class="w-100 d-flex justify-content-end text-end flex-fill">
+                  <div class="row">
+                    <div class="col-12" style="height: 200px;">
+                      <h2>Rev365</h2>
+                      <div>                        
+                        <div>are unaffected by this style</div>
+                        <div>will still show a bullet</div>
+                        <div>and have appropriate left margin</div>
+                      </div>
+                    </div>
+                    <div class="col-12" style="height: 200px;"></div>
+                    <div class="col-12" style="height: 200px;">
+                      <h2>Amagi</h2>
+                      <span class="text-muted">May, 2022 - Present</span>
+                      <div class="mt-3">                        
+                        <div>are unaffected by this style</div>
+                        <div>will still show a bullet</div>
+                        <div>and have appropriate left margin</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex-shrink-1 px-5">
+                  <div class="d-flex justify-content-center h-100">
+                    <div class="vr"></div>
+                  </div>
+                </div>
+                <div class="w-100 flex-fill">
+                  <div class="row">
+                    <div class="col-12" style="height: 200px;"></div>
+                    <div class="col-12" style="height: 200px;">
+                      <h2>Freelance</h2>
+                      <div>                        
+                        <div>are unaffected by this style</div>
+                        <div>will still show a bullet</div>
+                        <div>and have appropriate left margin</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             </div>
           </div>
         </div>
       </section>
@@ -150,7 +314,12 @@
       <section class="app__projects">
         <div class="container">
           <div class="pt-2 pb-5 text-center">
-            <h1>Featured Projects</h1>
+            <h1 class="display-2 fw-semibold">
+              <div class="row">
+                <div class="col-12">Projects</div>                
+              </div>
+            </h1>
+            <p class="fs-4 mt-4">All of these projects are carefully planned, efficiently developed, and delivered in full and on time.</p>
           </div>
 
           <div
@@ -162,70 +331,138 @@
               class="projects__project col-sm-6 col-lg-4 mb-4"
               style="position: absolute; left: 0%; top: 0px"
             >
-              <div class="card border-0 overflow-hidden">
-                <div
-                  class="bg-secondary w-100 position-relative border border-3 border-primary rounded"
-                >
-                  <div class="card__image__container__screen bg-primary">
-                    <div
-                      class="position-absolute top-0 start-0 card__image__container opacity-25"
-                    >
-                      <img
-                        src="https://source.unsplash.com/random"
+              <div class="card overflow-hidden rounded-3">
+                <div class="card-body">
+                  <div>
+                    <h5 class="card-title text-start">
+                      <span class="badge rounded-pill bg-primary"><b>Featured Project !</b> </span>                    
+                    </h5>
+              
+                    <div class="card__image__container__screen position-relative">
+                      <div
+                          class="position-absolute top-50 start-50 translate-middle card__image__container opacity-25"
+                      >
+                        <img
+                        src="./assets/images/PDA-DCC.jpg"
                         alt="Project 1 Image"
                         class="card__image"
                         loading="lazy"
-                      />
+                        />
+                      </div>
+                    </div>
+  
+                    <div class="text-center">
+                      <button class="btn border-0 text-primary fw-bold text-decoration-underline">View Details</button>
                     </div>
                   </div>
-                </div>
-
-                <div class="card-body">
-                  <h5 class="card-title text-center">
-                    <b class="text-primary d">Project</b> Predicate
-                  </h5>
-                  <!-- <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p> -->
+                  <div class="bg-primary position-absolute top-50 start-50 translate-middle w-100 h-100 p-3" >
+                    <div class="row">
+                      <div class="col-12">
+                        <span class="text-white fw-light fst-italic">Description</span>
+                        <p class="card-tex text-white fs-5">
+                          This is a longer card with supporting text below as a natural
+                          lead-in to additional content. This content is a little bit
+                          longer.
+                        </p>
+                      </div>
+                      <div class="col-12">
+                        <span class="text-white fw-light fst-italic">Contribution</span>
+                        <p class="card-tex text-white fs-5">
+                          This is a longer card with supporting text below as a natural
+                          lead-in to additional content. This content is a little bit
+                          longer.
+                        </p>
+                      </div>
+                      <div class="col-12">
+                        <span class="text-white fw-light fst-italic">Development to production</span>
+                        <p class="card-tex text-white fs-5">
+                          Oct, 2022 - Dec, 2022 (6 months)
+                        </p>
+                      </div>
+                      <div class="col-12">
+                        <span class="text-white fw-light fst-italic">Associated Links</span>
+                        <div class="hstack gap-3">
+                          <span>
+                            <a class="text-white" href="#">Live Demo</a>
+                          </span>
+                          <span>
+                            <a class="text-white" href="#">Source Code</a>
+                          </span>                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>         
                 </div>
               </div>
             </div>
             <div
-              class="projects__project col-sm-6 col-lg-4 mb-4"
-              style="position: absolute; left: 0%; top: 0px"
-            >
-              <div class="card border-0 overflow-hidden">
-                <div
-                  class="bg-secondary w-100 position-relative border border-3 border-primary rounded"
-                >
-                  <div class="card__image__container__screen bg-primary">
+            class="projects__project col-sm-6 col-lg-4 mb-4"
+            style="position: absolute; left: 0%; top: 0px"
+          >
+            <div class="card overflow-hidden rounded-3">
+              <div class="card-body">
+                <div>
+                  <h5 class="card-title text-start">
+                    <span class="badge rounded-pill bg-primary"><b>Featured Project !</b> </span>                    
+                  </h5>
+            
+                  <div class="card__image__container__screen position-relative">
                     <div
-                      class="position-absolute top-0 start-0 card__image__container opacity-25"
+                        class="position-absolute top-50 start-50 translate-middle card__image__container opacity-25"
                     >
                       <img
-                        src="https://source.unsplash.com/random"
-                        alt="Project 1 Image"
-                        class="card__image"
-                        loading="lazy"
+                      src="./assets/images/PDA-DCC.jpg"
+                      alt="Project 1 Image"
+                      class="card__image"
+                      loading="lazy"
                       />
                     </div>
                   </div>
-                </div>
 
-                <div class="card-body">
-                  <h5 class="card-title text-center">
-                    <b class="text-primary d">Project</b> Predicate
-                  </h5>
-                  <!-- <p class="card-text">
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </p> -->
+                  <div class="text-center">
+                    <button class="btn border-0 text-primary fw-bold text-decoration-underline">View Details</button>
+                  </div>
                 </div>
+                <!-- <div class="bg-primary position-absolute top-50 start-50 translate-middle w-100 h-100 p-3" >
+                  <div class="row">
+                    <div class="col-12">
+                      <span class="text-white fw-light fst-italic">Description</span>
+                      <p class="card-tex text-white fs-5">
+                        This is a longer card with supporting text below as a natural
+                        lead-in to additional content. This content is a little bit
+                        longer.
+                      </p>
+                    </div>
+                    <div class="col-12">
+                      <span class="text-white fw-light fst-italic">Contribution</span>
+                      <p class="card-tex text-white fs-5">
+                        This is a longer card with supporting text below as a natural
+                        lead-in to additional content. This content is a little bit
+                        longer.
+                      </p>
+                    </div>
+                    <div class="col-12">
+                      <span class="text-white fw-light fst-italic">Development to production</span>
+                      <p class="card-tex text-white fs-5">
+                        Oct, 2022 - Dec, 2022 (6 months)
+                      </p>
+                    </div>
+                    <div class="col-12">
+                      <span class="text-white fw-light fst-italic">Associated Links</span>
+                      <div class="hstack gap-3">
+                        <span>
+                          <a class="text-white" href="#">Live Demo</a>
+                        </span>
+                        <span>
+                          <a class="text-white" href="#">Source Code</a>
+                        </span>                          
+                      </div>
+                    </div>
+                  </div>
+                </div>          -->
               </div>
             </div>
+          </div>
             <div
               class="projects__project col-sm-6 col-lg-4 mb-4"
               style="position: absolute; left: 0%; top: 0px"
@@ -368,112 +605,28 @@
 
       <div class="my-5 py-5"></div>
 
-      <!-- FAQ SECTION -->
-      <section class="app__faqs">
-        <div class="container">
-          <div class="pt-2 pb-5">
-            <h1>Frequently Asked Questions</h1>
-          </div>
-          
-          <div class="accordion" id="accordionPanelsStayOpenExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                <button
-                  class="accordion-button"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseOne"
-                  aria-expanded="true"
-                  aria-controls="panelsStayOpen-collapseOne"
-                >
-                  Accordion Item #1
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseOne"
-                class="accordion-collapse collapse show"
-                aria-labelledby="panelsStayOpen-headingOne"
-              >
-                <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It
-                  is shown by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
-                </div>
+      <!-- INTRODUCTION SECTION -->
+      <section class="bg-dark app__intro">
+        <div class="container-xxl text-secondary px-4 py-5 text-center">
+          <div class="py-5">
+            <h1 class="display-5 fw-bold text-white">
+              <div class="row">
+                <div class="col-12">This is serious job</div>                
               </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseTwo"
-                >
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseTwo"
-                class="accordion-collapse collapse"
-                aria-labelledby="panelsStayOpen-headingTwo"
-              >
-                <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseThree"
-                  aria-expanded="false"
-                  aria-controls="panelsStayOpen-collapseThree"
-                >
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div
-                id="panelsStayOpen-collapseThree"
-                class="accordion-collapse collapse"
-                aria-labelledby="panelsStayOpen-headingThree"
-              >
-                <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It
-                  is hidden by default, until the collapse plugin adds the
-                  appropriate classes that we use to style each element. These
-                  classes control the overall appearance, as well as the showing
-                  and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also
-                  worth noting that just about any HTML can go within the
-                  <code>.accordion-body</code>, though the transition does limit
-                  overflow.
-                </div>
+            </h1>
+            <!-- <div class="col-12">I'm not here to just impress you. I put my responsibilities in high regard all the time so that you can put your trust on me.</div> -->
+            <div class="col-lg-6 mx-auto">
+              <p class="fs-5 mb-4">I'm not here to just impress you. I put my responsibilities in high regard all the time so that you can put your trust on me.</p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Custom button</button>
+                <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary</button>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section>    
 
-      <div class="my-5 py-5"></div>
+      <div class="my-5 py-5"></div>        
 
       <!-- CONTACT SECTION -->
       <section class="app__contact">
